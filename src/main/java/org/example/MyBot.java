@@ -31,7 +31,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if (text.equals("Uzbek tili\uD83C\uDDFA\uD83C\uDDFF")){
                 try {
-                    execute(myBotService.Uzbekcountryside(chatId));
+                    execute(myBotService.uzbekAiraports(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -45,7 +45,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
             if (text.equals("Русский язык\uD83C\uDDF7\uD83C\uDDFA")){
                 try {
-                    execute(myBotService.Russiancountryside(chatId));
+                    execute(myBotService.russiaAiraports(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -1419,6 +1419,13 @@ public class MyBot extends TelegramLongPollingBot {
             if (text.equals("Boston")) {
                 try {
                     execute(myBotService.boston(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (text.equals("Houston")) {
+                try {
+                    execute(myBotService.houston(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

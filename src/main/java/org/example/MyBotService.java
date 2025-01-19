@@ -42,7 +42,6 @@ public class MyBotService {
 
         return sendMessage;
     }
-
     public SendMessage shareLocation(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -103,10 +102,10 @@ public class MyBotService {
 
     }
 
-    public SendMessage Uzbekcountryside(Long chatId) {
+    public SendMessage uzbekAiraports(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Tanlang");
+        sendMessage.setText("Uchib ketmoqchi bo'lgan aeroportni tanlang \uD83D\uDEEB");
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
@@ -114,45 +113,74 @@ public class MyBotService {
         KeyboardRow row = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
 
-        button.setText("Shimoliy Amerika \uD83C\uDDFA\uD83C\uDDF8");
+        button.setText("Toshkent, (TAS), Uzbekiston");
         row.add(button);
 
         KeyboardButton button1 = new KeyboardButton();
 
-        button1.setText("Janubiy Amerika \uD83C\uDDFA\uD83C\uDDF8");
+        button1.setText("Andijan, (AZN), Uzbekiston");
         row.add(button1);
         rowList.add(row);
 
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button2 = new KeyboardButton();
 
-        button2.setText("Osiyo \uD83C\uDF0F");
+        button2.setText("Buxoro, (BHK), Uzbekiston");
         row1.add(button2);
 
         KeyboardButton button3 = new KeyboardButton();
 
-        button3.setText("Evropa \uD83C\uDDEA\uD83C\uDDFA");
+        button3.setText("Farg'ona, (FEG), Uzbekiston");
         row1.add(button3);
-
-        KeyboardButton button4 = new KeyboardButton();
-
-        button4.setText("Avstaliya \uD83C\uDDE6\uD83C\uDDFA");
-        row1.add(button4);
         rowList.add(row1);
 
         KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("Namagan, (NMA), Uzbekiston");
+        row2.add(button4);
+
         KeyboardButton button5 = new KeyboardButton();
 
-
-
-        button5.setText("\uD83D\uDD19 Bosh menyuga qaytish");
+        button5.setText("Nukus, (NCU), Uzbekiston");
         row2.add(button5);
+        rowList.add(row2);
 
+        KeyboardRow row3 = new KeyboardRow();
         KeyboardButton button6 = new KeyboardButton();
 
-        button6.setText("\uD83D\uDD19 Orqaga qaytish");
-        row2.add(button6);
-        rowList.add(row2);
+        button6.setText("Qarshi, (KSQ), Uzbekiston");
+        row3.add(button6);
+
+        KeyboardButton button7 = new KeyboardButton();
+
+        button7.setText("Samarqand, (SKD), Uzbekiston");
+        row3.add(button7);
+        rowList.add(row3);
+
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardButton button8 = new KeyboardButton();
+
+        button8.setText("Termez, (TMJ), Uzbekiston");
+        row4.add(button8);
+
+        KeyboardButton button9 = new KeyboardButton();
+
+        button9.setText("Urgench, (UGC), Uzbekiston");
+        row4.add(button9);
+        rowList.add(row4);
+
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardButton button10 = new KeyboardButton();
+
+        button10.setText("\uD83D\uDD19 Bosh saxifaga qaytish");
+        row5.add(button10);
+
+        KeyboardButton button11 = new KeyboardButton();
+
+        button11.setText("\uD83D\uDD19 Orqaga qaytish");
+        row5.add(button11);
+        rowList.add(row5);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -160,62 +188,92 @@ public class MyBotService {
 
         return sendMessage;
     }
-
-    public SendMessage Russiancountryside(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
+    public SendMessage russiaAiraports(Long chatId) {
+    SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Выберите");
+        sendMessage.setText("Выберите аэропорт, из которого вы хотите вылететь \uD83D\uDEEB");
 
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
+    ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+    List<KeyboardRow> rowList = new ArrayList<>();
 
-        KeyboardRow row = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
+    KeyboardRow row = new KeyboardRow();
+    KeyboardButton button = new KeyboardButton();
 
-        button.setText("Cеверная америка \uD83C\uDDFA\uD83C\uDDF8");
+        button.setText("Ташкент, (ТАС), Узбекистан");
         row.add(button);
 
-        KeyboardButton button1 = new KeyboardButton();
+    KeyboardButton button1 = new KeyboardButton();
 
-        button1.setText("Южная Америка \uD83C\uDDFA\uD83C\uDDF8");
+        button1.setText("Андижан, (AZN), Узбекистан");
         row.add(button1);
         rowList.add(row);
 
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button2 = new KeyboardButton();
+    KeyboardRow row1 = new KeyboardRow();
+    KeyboardButton button2 = new KeyboardButton();
 
-        button2.setText("Азия \uD83C\uDF0F");
+        button2.setText("Бухара, (БХК), Узбекистан");
         row1.add(button2);
 
-        KeyboardButton button3 = new KeyboardButton();
+    KeyboardButton button3 = new KeyboardButton();
 
-        button3.setText("Европа \uD83C\uDDEA\uD83C\uDDFA");
+        button3.setText("Фергана, (ФЕГ), Узбекистан");
         row1.add(button3);
-
-        KeyboardButton button4 = new KeyboardButton();
-
-        button4.setText("Австралия \uD83C\uDDE6\uD83C\uDDFA");
-        row1.add(button4);
         rowList.add(row1);
 
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardButton button5 = new KeyboardButton();
+    KeyboardRow row2 = new KeyboardRow();
+    KeyboardButton button4 = new KeyboardButton();
 
-        button5.setText("\uD83D\uDD19 Вернуться в главное меню");
+        button4.setText("Намагана, (НМА), Узбекистан");
+        row2.add(button4);
+
+    KeyboardButton button5 = new KeyboardButton();
+
+        button5.setText("Нукус, (НКУ), Узбекистан");
         row2.add(button5);
-
-        KeyboardButton button6 = new KeyboardButton();
-
-        button6.setText("\uD83D\uDD19 Назад");
-        row2.add(button6);
         rowList.add(row2);
+
+    KeyboardRow row3 = new KeyboardRow();
+    KeyboardButton button6 = new KeyboardButton();
+
+        button6.setText("Карши, (КСК), Узбекистан");
+        row3.add(button6);
+
+    KeyboardButton button7 = new KeyboardButton();
+
+        button7.setText("Samarkand, (С), Узбекистан");
+        row3.add(button7);
+        rowList.add(row3);
+
+    KeyboardRow row4 = new KeyboardRow();
+    KeyboardButton button8 = new KeyboardButton();
+
+        button8.setText("Termez, (TMJ), Uzbekistan");
+        row4.add(button8);
+
+    KeyboardButton button9 = new KeyboardButton();
+
+        button9.setText("Urgench, (UGC), Uzbekistan");
+        row4.add(button9);
+        rowList.add(row4);
+
+    KeyboardRow row5 = new KeyboardRow();
+    KeyboardButton button10 = new KeyboardButton();
+
+        button10.setText("\uD83D\uDD19 Go to main menu");
+        row5.add(button10);
+
+    KeyboardButton button11 = new KeyboardButton();
+
+        button11.setText("\uD83D\uDD19 Go back");
+        row5.add(button11);
+        rowList.add(row5);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
 
         return sendMessage;
-    }
+}
     public SendMessage englishAiraports(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -958,52 +1016,45 @@ public class MyBotService {
     public SendPhoto newyork(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://media.gettyimages.com/id/599766748/photo/the-city-of-dreams-new-york-citys-skyline-at-twilight.jpg?b=1&s=170667a&w=0&k=20&c=TbuUPvEHzTUmcsrvElBmW10IDpvRW1_cDnD4pyv0XlA="));
-        sendPhoto.setCaption("\uD83C\uDFD9 New York City is one of the largest and most famous cities in the world, the cultural and economic center of the United States. The city is often called the \"Big Apple\" and is a symbol of the American dream. Here are the main facts about New York:" +
-                "\uD83D\uDCCA New York City Facts\n" +
-                "\uD83D\uDCCD Location: On the east coast of the United States, in New York State.\n" +
-                "\uD83C\uDFD8 Boroughs: New York City consists of five boroughs:\n" +
-                "\uD83C\uDFDB Manhattan is the heart of the city, home to the famous Times Square, Central Park, and Wall Street.\n" +
-                "Brooklyn is known for its cultural life, the Brooklyn Bridge, and stylish neighborhoods.\n" +
-                "Queens is the most culturally diverse borough.\n" +
-                "\uD83C\uDFA4 The Bronx is the birthplace of hip-hop and the New York Yankees.\n" +
-                "Staten Island is a quieter, greener borough, connected to the rest of the city by ferry.\n" +
-                "\n" +
-                "Main Attractions\n" +
-                "\uD83D\uDDFD The Statue of Liberty is a symbol of freedom and democracy.\n" +
-                "\uD83C\uDFDE Central Park is a huge park in the center of Manhattan, an ideal place for walking and relaxing.\n" +
-                "\uD83C\uDFE2 The Empire State Building is one of the most famous skyscrapers in the world.\n" +
-                "Times Square is a bustling area with colorful advertising screens.\n" +
-                "\uD83D\uDE87 The Metropolitan Museum of Art is one of the largest museums in the world.\n" +
-                "\uD83C\uDFDB The Museum of Modern Art (MoMA) is a center for contemporary art.\n" +
-                "Broadway is a mecca for the performing arts.\n" +
-                "\n" +
-                "Interesting facts\n" +
-                "\uD83D\uDC65 More than 3 million immigrants live in New York City, and more than 200 languages \u200B\u200Bare spoken in the city.\n" +
-                "\uD83D\uDC64 More than 60 million tourists visit the city every year.\n" +
-                "\uD83C\uDF55 Pizza and bagels are iconic New York food.");
+
+        String photoUrl = "https://media.gettyimages.com/id/599766748/photo/the-city-of-dreams-new-york-citys-skyline-at-twilight.jpg?b=1&s=170667a&w=0&k=20&c=TbuUPvEHzTUmcsrvElBmW10IDpvRW1_cDnD4pyv0XlA=";
+        sendPhoto.setPhoto(new InputFile(photoUrl));
+
+        String caption = "\uD83C\uDFD9 New York City is one of the largest and most famous cities in the world, "
+                + "the cultural and economic center of the United States. The city is often called the \"Big Apple\" "
+                + "and is a symbol of the American dream.\n\n"
+                + "Interesting facts about New York:\n"
+                + "\uD83D\uDCCD Location: On the east coast of the United States, in New York State.\n"
+                + "\uD83C\uDFD8 Boroughs:\n"
+                + "- Manhattan: Times Square, Central Park, Wall Street.\n"
+                + "- Brooklyn: Cultural hub with Brooklyn Bridge.\n"
+                + "- Queens: The most diverse borough.\n"
+                + "- Bronx: Home of hip-hop and the Yankees.\n"
+                + "- Staten Island: A quieter, greener borough.\n\n"
+                + "Attractions:\n"
+                + "- \uD83D\uDDFD Statue of Liberty: Icon of freedom.\n"
+                + "- \uD83C\uDFDE Central Park: Green escape.\n"
+                + "- \uD83C\uDFE2 Empire State Building: Global icon.\n"
+                + "- Times Square: Energy-filled center.\n"
+                + "- Metropolitan Museum of Art: World-class art.\n"
+                + "- Broadway: Theater capital.";
+
+        if (caption.length() > 1024) {
+            caption = caption.substring(0, 1021) + "...";
+        }
+        sendPhoto.setCaption(caption);
 
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 
         KeyboardRow row = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-
-        button.setText("Tickets \uD83C\uDFAB");
-        row.add(button);
+        row.add(new KeyboardButton("John F. Kennedy International Airport, JFK"));
         rowList.add(row);
 
         KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button1 = new KeyboardButton();
-
-        button1.setText("\uD83D\uDD19 Go to main menu");
-        row1.add(button1);
-
-        KeyboardButton button2 = new KeyboardButton();
-
-        button2.setText("\uD83D\uDD19 Go back");
-        row1.add(button2);
-        rowList.add(row);
+        row1.add(new KeyboardButton("🔙 Go to main menu"));
+        row1.add(new KeyboardButton("🔙 Go back"));
+        rowList.add(row1);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         replyKeyboardMarkup.setResizeKeyboard(true);
@@ -1011,6 +1062,7 @@ public class MyBotService {
 
         return sendPhoto;
     }
+
 
     public SendPhoto losangeles(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
@@ -1058,39 +1110,49 @@ public class MyBotService {
         return sendPhoto;
     }
     public SendPhoto chikago(Long chatId) {
-        SendPhoto sendPhoto=new SendPhoto();
+        if (chatId == null) {
+            throw new IllegalArgumentException("Chat ID cannot be null");
+        }
+
+        SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://th.bing.com/th/id/R.826cc2065d5fca170984a2f2103a3f6a?rik=eGanc7rO9NrA%2fg&pid=ImgRaw&r=0"));
-        sendPhoto.setCaption("Chicago is the third-largest city in the United States and the largest economic and cultural center in the Midwest. Known as the \"Windy City,\" Chicago is known for its rich architecture, musical history, and picturesque location on the shores of Lake Michigan.\n" +
-                "\n" +
-                "Chicago Highlights\n" +
-                "Location: Northeastern Illinois, on the southern shore of Lake Michigan.\n" +
-                "Nickname: \"The Windy City\" refers to both the weather and the city's lively political history.\n" +
-                "\n" +
-                "Art: Chicago is famous for its museums, including the Art Institute of Chicago, one of the largest museums in the world.\n" +
-                "Architecture: Chicago is the birthplace of the skyscraper. The Willis Tower (formerly the Sears Tower) was for a long time the tallest building in the world.\n" +
-                "\n" +
-                "Top Attractions\n" +
-                "Millennium Park: A popular recreational spot, famous for its sculpture, \"The Bean.\"\n" +
-                "Chicago River: Scenic boat tours offer views of the city's architecture. Navy Pier: An amusement park with restaurants, rides, and a Ferris wheel.\n" +
-                "Lincoln Park: A huge city park with a free zoo and botanical garden.\n" +
-                "Willis Tower: A skyscraper with a Skydeck offering panoramic views of the city.\n" +
-                "\n" +
-                "Food\n" +
-                "Chicago is a foodie's paradise, with iconic dishes:\n" +
-                "\n" +
-                "Deep-dish pizza: A high-sided pizza filled with cheese and tomato sauce.\n" +
-                "Chicago hot dogs: Sausage topped with mustard, onions, pickles, and peppers – no ketchup!\n" +
-                "Italian beef: A juicy beef sandwich with spices.\n" +
-                "\n" +
-                "Fun facts\n" +
-                "\n" +
-                "\uD83C\uDFDEThe Chicago River turns green every year on St. Patrick's Day.\n" +
-                "The city has served as the setting for many iconic films, including The Blues Brothers and Home Alone.\n" +
-                "Chicago is a combination of culture, history and modern energy that makes it unique and attractive to tourists and locals alike.");
+        sendPhoto.setCaption("Chicago is the third-largest city in the United States and the largest economic and cultural center in the Midwest.\n" +
+                "Known as the \"Windy City,\" Chicago is known for its rich architecture, musical history, and picturesque location on Lake Michigan.\n\n" +
+                "🔹 **Top Attractions:**\n" +
+                "- Millennium Park: Famous for \"The Bean.\"\n" +
+                "- Chicago River: Scenic boat tours.\n" +
+                "- Navy Pier: Restaurants, rides, Ferris wheel.\n" +
+                "- Willis Tower: Skydeck with panoramic views.\n\n" +
+                "🔹 **Food:**\n" +
+                "- Deep-dish pizza.\n" +
+                "- Chicago hot dogs.\n" +
+                "- Italian beef sandwich.\n\n" +
+                "Fun Facts:\n" +
+                "- The Chicago River turns green every year on St. Patrick's Day.\n" +
+                "- The city has served as the setting for many iconic films.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row1 = new KeyboardRow();
+        row1.add(new KeyboardButton("O'Hare International Airport, ORD"));
+
+        KeyboardRow row2 = new KeyboardRow();
+        row2.add(new KeyboardButton("\uD83D\uDD19 Go to main menu"));
+        row2.add(new KeyboardButton("\uD83D\uDD19 Go back"));
+
+        rowList.add(row1);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendPhoto.setReplyMarkup(replyKeyboardMarkup);
 
         return sendPhoto;
     }
+
+
 
     public SendPhoto miami(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
@@ -1132,7 +1194,7 @@ public class MyBotService {
         KeyboardRow row=new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
 
-        button.setText("Tickets \uD83C\uDFAB");
+        button.setText("Miami International Airport, MIA");
         row.add(button);
         rowList.add(row);
 
@@ -1155,47 +1217,46 @@ public class MyBotService {
         return sendPhoto;
     }
     public SendPhoto lasvegas(Long chatId) {
-        SendPhoto sendPhoto=new SendPhoto();
+        SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://www.luxurylifestylemag.co.uk/wp-content/uploads/2023/01/bigstock-Las-Vegas-At-Sunset-5181699.jpg"));
-        sendPhoto.setCaption("\uD83C\uDFD9 Chicago is the third-largest city in the United States and the largest economic and cultural center of the Midwest. Known as the \"Windy City,\" Chicago is famous for its rich architecture, musical history, and picturesque location on the shores of Lake Michigan.\n" +
+        sendPhoto.setCaption("\uD83C\uDFD9 Las Vegas is known as the entertainment capital of the world. Located in the Nevada desert, it is famous for its vibrant nightlife, luxurious resorts, casinos, and entertainment shows.\n" +
                 "\n" +
-                "\uD83D\uDCCA Key facts about Chicago\n" +
-                "\uD83D\uDCCD Location: In northeastern Illinois, on the southern shore of Lake Michigan.\n" +
-                "\uD83C\uDFD9 Nickname: \"The Windy City\" - this name is associated with both the weather and the lively political debates in the city's history.\n" +
+                "\uD83D\uDCCA Key facts about Las Vegas\n" +
+                "\uD83D\uDCCD Location: In southern Nevada, in the Mojave Desert.\n" +
+                "\uD83C\uDFD9 Nickname: \"The Entertainment Capital of the World\" - renowned for its vibrant nightlife and casinos.\n" +
                 "\n" +
                 "Culture and lifestyle\n" +
-                "Chicago is a city of contrasts, where skyscrapers coexist with cozy parks, and a bustling business life harmonizes with rich cultural traditions.\n" +
+                "Las Vegas is a city that never sleeps. Known for its extravagant shows, high-end shopping, and 24-hour nightlife, it offers a unique mix of luxury and excitement.\n" +
                 "\n" +
-                "\uD83C\uDFA4 Music: The city became the cradle of modern jazz and blues. Legends such as Louis Armstrong and Muddy Waters performed here.\n" +
-                "\uD83D\uDDBC Art: Chicago is famous for its museums, including the Art Institute of Chicago, one of the largest museums in the world.\n" +
-                "\uD83C\uDFD7 Architecture: Chicago is the birthplace of skyscrapers. The Willis Tower (formerly the Sears Tower) was the tallest building in the world for a long time.\n" +
+                "\uD83C\uDFA4 Music and Dance: Las Vegas hosts some of the world's biggest music events and performances from top artists.\n" +
+                "\uD83C\uDF8A Casinos: Famous for its world-class casinos, where you can try your luck in the games.\n" +
+                "\uD83C\uDFD7 Shows: The city is home to some of the most iconic entertainment shows, including Cirque du Soleil and other famous performances.\n" +
                 "\n" +
                 "Top Attractions\n" +
-                "\uD83C\uDFA1 Millennium Park: A popular recreation area, famous for its sculpture \"Cloud Gate\" (The Bean).\n" +
-                "\uD83C\uDFDE Chicago River: Scenic boat tours allow you to enjoy views of the city's architecture.\n" +
-                "Navy Pier: An entertainment complex with restaurants, rides, and a Ferris wheel.\n" +
-                "\uD83C\uDFDE Lincoln Park: A huge city park with a free zoo and botanical garden.\n" +
-                "\uD83C\uDFD9 Willis Tower: A skyscraper with a Skydeck observation deck offering panoramic views of the city.\n" +
+                "\uD83C\uDFD6 The Strip: Las Vegas Boulevard, home to the most famous casinos, hotels, and restaurants.\n" +
+                "\uD83C\uDFEC Bellagio Fountains: A stunning water and light show outside the Bellagio Hotel.\n" +
+                "The Venetian: A luxury hotel and casino that replicates the canals of Venice.\n" +
+                "\uD83C\uDF6C The High Roller: The world’s tallest observation wheel with stunning views of the city.\n" +
+                "\uD83C\uDF80 Fremont Street: A historic street that offers a unique experience with vintage casinos and an LED canopy.\n" +
                 "\n" +
                 "Food\n" +
-                "Chicago is a foodie's paradise, with dishes that have become iconic:\n" +
+                "Las Vegas is a culinary destination, offering everything from affordable eateries to Michelin-starred restaurants:\n" +
                 "\n" +
-                "\uD83C\uDF55 Deep-dish pizza: A high-sided pizza filled with cheese and tomato sauce.\n" +
-                "\uD83C\uDF2D Chicago hot dogs: Sausage with mustard, onions, pickles, and peppers – no ketchup!\n" +
-                "\uD83E\uDD69 Italian beef: A juicy sandwich with beef and spices.\n" +
+                "\uD83C\uDF5F Buffets: Famous for its extravagant buffets offering a wide variety of dishes.\n" +
+                "\uD83C\uDF6F Fine Dining: World-renowned chefs operate restaurants offering upscale dining experiences.\n" +
+                "\uD83C\uDF57 Unique Eateries: Las Vegas is known for unique themed restaurants, from Gordon Ramsay’s eateries to celebrity chef-driven restaurants.\n" +
                 "\n" +
-                "Fun facts\n" +
-                "\uD83D\uDEE3 Chicago is one of the largest transportation hubs in the United States, with O'Hare International Airport.\n" +
-                "\uD83D\uDD25 The city experienced the Great Fire of 1871, which became the catalyst for the construction of modern skyscrapers.\n" +
-                "\uD83C\uDFDE The Chicago River turns green every year on St. Patrick's Day.\n" +
-                "\uD83C\uDFA5 The city has served as the setting for many iconic films, including The Blues Brothers and Home Alone.\n" +
-                "Chicago is a combination of culture, history and modern energy that makes it unique and attractive to tourists and locals alike. \uD83C\uDF06");
+                "Fun Facts\n" +
+                "\uD83D\uDEE3 The city is home to more than 70 casinos and over 150,000 hotel rooms.\n" +
+                "\uD83D\uDCA1 The Las Vegas Strip is over 4 miles long.\n" +
+                "\uD83C\uDFB6 Las Vegas hosts more than 30 million visitors annually.\n" +
+                "Las Vegas is known for its iconic neon lights, which have become synonymous with the city’s image.\n");
 
-        ReplyKeyboardMarkup replyKeyboardMarkup=new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList=new ArrayList<>();
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
 
-        KeyboardRow row=new KeyboardRow();
+        KeyboardRow row = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
 
         button.setText("Tickets \uD83C\uDFAB");
@@ -1220,6 +1281,7 @@ public class MyBotService {
 
         return sendPhoto;
     }
+
     public SendPhoto boston(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
         sendPhoto.setChatId(chatId);
