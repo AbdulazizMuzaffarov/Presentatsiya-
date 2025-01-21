@@ -188,6 +188,657 @@ public class MyBotService {
 
         return sendMessage;
     }
+    public SendMessage tashkentUzblishcoutryside(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Shimoliy America \uD83C\uDDFA\uD83C\uDDF8");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("Janubiy America \uD83C\uDDFA\uD83C\uDDF8");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("Osiyo \uD83C\uDF0F");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("Evropa \uD83C\uDDEA\uD83C\uDDFA");
+        row1.add(button3);
+
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("Avstraliya \uD83C\uDDE6\uD83C\uDDFA");
+        row1.add(button4);
+        rowList.add(row1);
+
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button5 = new KeyboardButton();
+
+        button5.setText("\uD83D\uDD19 Bosh sahifaga qaytosh");
+        row2.add(button5);
+
+        KeyboardButton button6 = new KeyboardButton();
+
+        button6.setText("\uD83D\uDD19 Orqaga qaytish");
+        row2.add(button6);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage northamerikaUzb(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Choose one");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Shimoliy-Amerikaga Turlar \uD83C\uDDFA\uD83C\uDDF8");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("O'zim-tanlayman \uD83D\uDC64");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("\uD83D\uDD19 Orqaga qaytish");
+        row1.add(button3);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage southamerikaUzb(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Bittasini tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Janubiy-Amerika Turlar \uD83C\uDDFA\uD83C\uDDF8");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("O'zim tanlayman \uD83D\uDC64");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("\uD83D\uDD19 Orqaga qaytish");
+        row1.add(button3);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage asiaUzb(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Osiyoga Turlar \uD83C\uDF0F");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("O'zim tanlayman \uD83D\uDC64");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("\uD83D\uDD19 Bosha sahifaga qaytish");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("\uD83D\uDD19 Orqaga qaytish");
+        row1.add(button3);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage europeUzb(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Evropaga Turlar \uD83C\uDDEA\uD83C\uDDFA");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("O'zim tanlayman \uD83D\uDC64");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("\uD83D\uDD19 Bosh sahifaga qaytoish");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("\uD83D\uDD19 Orqaga qaytish");
+        row1.add(button3);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage australiaUzb(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Tanlang");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Avstraliyaga turlar \uD83C\uDDE6\uD83C\uDDFA");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("O'zim tanlayman \uD83D\uDC64");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("\uD83D\uDD19 Bosha sahifaga qaytish");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("\uD83D\uDD19 Orqaga qaytish");
+        row1.add(button3);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendMessage northamerikaUzbInfo(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Qaysi saharga uchib ketmoqchisiz?");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("AQSh \uD83C\uDDFA\uD83C\uDDF8");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("Kanada \uD83C\uDDE8\uD83C\uDDE6");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("Kuba \uD83C\uDDE8\uD83C\uDDFA");
+        row1.add(button3);
+
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("Meksiko \uD83C\uDDF2\uD83C\uDDFD");
+        row1.add(button2);
+        rowList.add(row1);
+
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button5 = new KeyboardButton();
+
+        button5.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row2.add(button5);
+
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("\uD83D\uDD19 Orqaga qaytish");
+        row2.add(button4);
+        rowList.add(row2);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
+    public SendPhoto AQSh(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://gdb.currenttime.tv/0d7d36d3-901e-4692-a7c6-94dea6da8c2e_w1080_h608.jpg"));
+        sendPhoto.setCaption("AQSH (Amerika Qoʻshma Shtatlari) +\n" +
+                " \"Poytaxti: Vashington, DC. +\n" +
+                " \"Ma'lum: global super kuch, kino sanoati markazi (Gollivud), rivojlanayotgan texnologiya (Silikon vodiysi), moliya (Uoll-strit) va madaniyat.+\n" +
+                " Diqqatga sazovor joylar: Ozodlik haykali, Katta Kanyon, Oq uy, Milliy bog‘lar.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Nyu-York shahri");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("Los-Anjeles");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("Chikago");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("Mayami");
+        row1.add(button3);
+        rowList.add(row1);
+
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("Las Vegass");
+        row2.add(button4);
+
+        KeyboardButton button5 = new KeyboardButton();
+
+        button5.setText("San Francisko");
+        row2.add(button5);
+        rowList.add(row2);
+
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardButton button6 = new KeyboardButton();
+
+        button6.setText("Bo'ston");
+        row3.add(button6);
+
+        KeyboardButton button7 = new KeyboardButton();
+
+        button7.setText("Hyuston");
+        row3.add(button7);
+        rowList.add(row3);
+
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardButton button8 = new KeyboardButton();
+
+        button8.setText("Orlandoo");
+        row4.add(button8);
+
+        KeyboardButton button9 = new KeyboardButton();
+
+        button9.setText("Vashington, D.C.");
+        row4.add(button9);
+        rowList.add(row4);
+
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardButton button10 = new KeyboardButton();
+
+        button10.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row5.add(button10);
+
+        KeyboardButton button11 = new KeyboardButton();
+
+        button11.setText("\uD83D\uDD19 Orqaga qaytish");
+        row5.add(button11);
+        rowList.add(row5);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendPhoto.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto kanada(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("data:image/jpeg;base64,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"));
+        sendPhoto.setCaption("Kanada +\n" +
+                " \"Poytaxti: Ottava. +\n" +
+                " \"Ma'lum: tabiiy landshaftlari, yuqori turmush darajasi, do'stona odamlari va ko'p madaniyatli jamiyati. +\n" +
+                " Diqqatga sazovor joylar: Niagara sharsharasi, Banff va Rokki tog'lari, Kvebekning eski shahri.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Ottava");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+
+        button1.setText("Toranto");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("Vankuver");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("Monreal");
+        row1.add(button3);
+        rowList.add(row1);
+
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("Kalgari");
+        row2.add(button4);
+
+        KeyboardButton button5 = new KeyboardButton();
+
+        button5.setText("Kvebek");
+        row2.add(button5);
+        rowList.add(row2);
+
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardButton button6 = new KeyboardButton();
+
+        button6.setText("Edmonton");
+        row3.add(button6);
+
+        KeyboardButton button7 = new KeyboardButton();
+
+        button7.setText("Halifaxx");
+        row3.add(button7);
+        rowList.add(row3);
+
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardButton button8 = new KeyboardButton();
+
+        button8.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row4.add(button8);
+
+        KeyboardButton button9 = new KeyboardButton();
+
+        button9.setText("\uD83D\uDD19 Orqaga qaytish");
+        row4.add(button9);
+        rowList.add(row4);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendPhoto.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto meksiko(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://media.nomadicmatt.com/2022/mexicocitylove2.jpg"));
+        sendPhoto.setCaption("Meksika\n" +
+                " Poytaxti: Mexiko shahri.\n" +
+                " Ma'lum: Mayya va Azteklarning madaniy merosi, Karib dengizi plyajlari, jonli festivallar (O'liklar kuni), noyob taomlari (tacos, guakamol).\n" +
+                " Diqqatga sazovor joylar: Chichen Itza, Teotihuacan, Kankun, Playa del Karmen.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Meksiko shaxri");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("Gvadalaxara");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("Kankun");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("Puerto Vallartaa");
+        row1.add(button3);
+        rowList.add(row1);
+
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("Monterreyy");
+        row2.add(button4);
+
+        KeyboardButton button5 = new KeyboardButton();
+
+        button1.setText("Meridaa");
+        row2.add(button5);
+        rowList.add(row2);
+
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardButton button6 = new KeyboardButton();
+
+        button6.setText("Tixuana");
+        row3.add(button6);
+
+        KeyboardButton button7 = new KeyboardButton();
+
+        button7.setText("Oaxaka");
+        row3.add(button7);
+        rowList.add(row3);
+
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardButton button8 = new KeyboardButton();
+
+        button8.setText("San-Migel de Allende");
+        row4.add(button8);
+
+        KeyboardButton button9 = new KeyboardButton();
+
+        button9.setText("Playa del Karmen");
+        row4.add(button9);
+        rowList.add(row4);
+
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardButton button10 = new KeyboardButton();
+
+        button10.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row5.add(button8);
+
+        KeyboardButton button11 = new KeyboardButton();
+
+        button11.setText("\uD83D\uDD19 Orqaga qaytish");
+        row5.add(button11);
+        rowList.add(row5);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendPhoto.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendPhoto;
+    }
+
+    public SendPhoto kuba(Long chatId) {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCH0Ghw2I5-6gCTunEAPK4mcGBWc2hTJ3yw&s"));
+        sendPhoto.setCaption("Kuba\n" +
+                " Poytaxti: Gavana.\n" +
+                " Mashhur: mustamlaka shaharlari, boy tarix, musiqa (salsa), plyajlar va eski avtomobillar.\n" +
+                " Diqqatga sazovor joylar: Gavana, Trinidad, Varadero, Vinales.");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+
+        button.setText("Gavana");
+        row.add(button);
+
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("Santyago de Kuba");
+        row.add(button1);
+        rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+
+        button2.setText("Trinidadd");
+        row1.add(button2);
+
+        KeyboardButton button3 = new KeyboardButton();
+
+        button3.setText("Varaderoo");
+        row1.add(button3);
+        rowList.add(row1);
+
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button4 = new KeyboardButton();
+
+        button4.setText("Camaguey");
+        row2.add(button4);
+
+        KeyboardButton button5 = new KeyboardButton();
+
+        button1.setText("Cienfuegoss");
+        row2.add(button5);
+        rowList.add(row2);
+
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardButton button6 = new KeyboardButton();
+
+        button6.setText("Barakoa");
+        row3.add(button6);
+
+        KeyboardButton button7 = new KeyboardButton();
+
+        button7.setText("Olgin");
+        row3.add(button7);
+        rowList.add(row3);
+
+        KeyboardRow row4 = new KeyboardRow();
+        KeyboardButton button8 = new KeyboardButton();
+
+        button8.setText("Santa Klaraa");
+        row4.add(button8);
+
+        KeyboardButton button9 = new KeyboardButton();
+
+        button9.setText("Matanzalar");
+        row4.add(button9);
+        rowList.add(row4);
+
+        KeyboardRow row5 = new KeyboardRow();
+        KeyboardButton button10 = new KeyboardButton();
+
+        button10.setText("\uD83D\uDD19 Bosh sahifaga qaytish");
+        row5.add(button10);
+
+        KeyboardButton button11 = new KeyboardButton();
+
+        button11.setText("\uD83D\uDD19 Orqaga qaytish");
+        row5.add(button11);
+        rowList.add(row5);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        sendPhoto.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendPhoto;
+    }
     public SendMessage russiaAiraports(Long chatId) {
     SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -240,31 +891,31 @@ public class MyBotService {
 
     KeyboardButton button7 = new KeyboardButton();
 
-        button7.setText("Samarkand, (С), Узбекистан");
+        button7.setText("Samarkand, (СКД), Узбекистан");
         row3.add(button7);
         rowList.add(row3);
 
     KeyboardRow row4 = new KeyboardRow();
     KeyboardButton button8 = new KeyboardButton();
 
-        button8.setText("Termez, (TMJ), Uzbekistan");
+        button8.setText("Термез, (ТМЖ), Узбекистан");
         row4.add(button8);
 
     KeyboardButton button9 = new KeyboardButton();
 
-        button9.setText("Urgench, (UGC), Uzbekistan");
+        button9.setText("Ургенч, (УГС), Узбекстан");
         row4.add(button9);
         rowList.add(row4);
 
     KeyboardRow row5 = new KeyboardRow();
     KeyboardButton button10 = new KeyboardButton();
 
-        button10.setText("\uD83D\uDD19 Go to main menu");
+        button10.setText("\uD83D\uDD19 Вернуться в главную меню");
         row5.add(button10);
 
     KeyboardButton button11 = new KeyboardButton();
 
-        button11.setText("\uD83D\uDD19 Go back");
+        button11.setText("\uD83D\uDD19 Вернуться назад");
         row5.add(button11);
         rowList.add(row5);
 

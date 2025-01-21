@@ -43,6 +43,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+
             if (text.equals("Русский язык\uD83C\uDDF7\uD83C\uDDFA")){
                 try {
                     execute(myBotService.russiaAiraports(chatId));
